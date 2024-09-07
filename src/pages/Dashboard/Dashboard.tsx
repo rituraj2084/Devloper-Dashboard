@@ -23,7 +23,8 @@ const Dashboard: React.FC = () => {
     <DashboardLayout>
       <h1>Devlopers Activity Dashboard</h1>
       <StackedBarChart activityMeta={activityMeta} rows={rows} />
-      {rows?.map((row) => {
+      {rows?.map((row: any) => {
+        console.log("Row: ", row);
         return (
           <div key={row?.name}>
             <h4 className="username">Username: {row?.name.split("@")[0]}</h4>

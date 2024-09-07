@@ -31,36 +31,3 @@ export interface AuthorWorklogData {
   activityMeta: ActivityMeta[];
   rows: RowData[];
 }
-
-// {
-//   data: {
-//     AuthorWorklog:{
-//       activityMeta: [{label: string, fillColor: string}],
-//       rows:[
-//         {
-//           name: string,
-//           totalActivity: [{name: string, value: string}],
-//           dayWiseActivity: [
-//             {
-//               date: string,
-//               items: {
-//                 children: [
-//                   {
-//                     count: string,
-//                     label: string,
-//                     fillColor: string
-//                   }
-//                 ]
-//               }
-//             }
-//           ],
-//           activeDays:{
-//             days: number,
-//             isBurnOut: boolean,
-//             insight: [string]
-//           }
-//         }
-//       ]
-//     }
-//   }
-// }
